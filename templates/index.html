@@ -80,11 +80,14 @@
         <div class="result" style="align-items: center;">
             {% if r==1 %}
             {% for i in lis %}
-            <div class="card" style="width: 18rem;">
+            <div class="card text-center">
+                <div class="card-header bg-dark text-white">
+                    Output
+                </div>
                 <div class="card-body">
                     {% for j in i %}
                     <p class="card-text">{{j|safe}}</p>
-                    <br>
+                    <hr>
                     {% endfor %}
                 </div>
             </div>
